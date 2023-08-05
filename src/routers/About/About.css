@@ -3,9 +3,47 @@
   row-gap: 5rem;
   padding: 4rem 0 5rem;
   height: 100vh;
-  /* background-image: url("../../assets/images/profile_photo2.JPG"); */
   background-color: #dedede;
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.about__container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.about__content {
+  width: 400px;
+}
+
+.about__content p {
+  font-size: 1.2rem;
+}
+
+.about__container img {
+  max-width: 300px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .about__container {
+    flex-wrap: wrap-reverse;
+    gap: 0rem;
+  }
+
+  .about__content {
+    width: 400px;
+    margin: 0 10px 20px 10px;
+  }
+
+  .about__content p {
+    font-size: 1rem;
+  }
 }

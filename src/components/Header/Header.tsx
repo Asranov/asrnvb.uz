@@ -15,6 +15,13 @@ function Header() {
     return location.pathname === path ? 'active' : '';
   };
 
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = process.env.PUBLIC_URL + '/CV.pdf';
+    link.download = `Asranov's CV`;
+    link.click();
+  };
+
   return (
     <div className='header'>
       <nav className='nav'>
@@ -39,6 +46,9 @@ function Header() {
               <a href="/projects" className='nav__link'>
                 Projects
               </a>
+            </div>
+            <div className='nav__item'>
+              <button className='download__btn' onClick={handleDownload}>Download CV</button>
             </div>
           </div>
         </div>
