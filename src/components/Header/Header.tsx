@@ -26,6 +26,10 @@ function Header() {
   };
 
   useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
+
+  useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
       if (menuRef.current && !(menuRef.current as HTMLDivElement).contains(event.target as Node)) {
         setIsOpen(false);
