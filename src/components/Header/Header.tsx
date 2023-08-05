@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import "./Header.css";
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { AiOutlineClose } from 'react-icons/ai';
+
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,7 +55,11 @@ function Header() {
           </div>
         </div>
         <div className="nav__toggle" id="nav-toggle" onClick={handleChange}>
-          <GiHamburgerMenu />
+          {isOpen ? (
+            <AiOutlineClose />
+          ) : (
+            <GiHamburgerMenu />
+          )}
         </div>
       </nav>
     </div>

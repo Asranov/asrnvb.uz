@@ -85,6 +85,10 @@
     display: block;
   }
 
+  .active a:after {
+    background: #fff;
+  }
+
   .nav__menu {
     position: fixed;
     top: 3rem;
