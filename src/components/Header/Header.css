@@ -39,7 +39,7 @@
   position: relative;
 }
 
-.active:after {
+/* .active:after {
   position: absolute;
   content: "";
   width: 100%;
@@ -47,7 +47,7 @@
   left: 0;
   top: 2rem;
   background-color: #000;
-}
+} */
 
 .nav__toggle {
   display: none;
