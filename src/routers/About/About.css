@@ -1,0 +1,11 @@
+.about {
+  position: relative;
+  row-gap: 5rem;
+  padding: 4rem 0 5rem;
+  height: 100vh;
+  /* background-image: url("../../assets/images/profile_photo2.JPG"); */
+  background-color: #dedede;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}

@@ -1,0 +1,31 @@
+.projects {
+  position: relative;
+  row-gap: 5rem;
+  padding: 4rem 0 5rem;
+  height: 100vh;
+  background-color: #dedede;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.projects__container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects__page-title {
+  width: 50vw;
+}
+
+.projects__page-title p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.projects__page-title span {
+  color: cornflowerblue;
+}
