@@ -29,3 +29,14 @@
 .projects__page-title span {
   color: cornflowerblue;
 }
+
+@media only screen and (max-width: 767px) {
+  .projects__page-title {
+    width: 80vw;
+  }
+
+  .projects__page-title p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
