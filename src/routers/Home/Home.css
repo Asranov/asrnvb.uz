@@ -4,7 +4,7 @@
   padding: 4rem 0 5rem;
   height: 100vh;
   /* background-image: url("../../assets/images/profile_photo2.JPG"); */
-  background-color: #d6d6d6;
+  background-color: #dedede;
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
@@ -33,5 +33,9 @@
   .home__title {
     font-size: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .home__desc img {
+    width: 340px;
   }
 }
