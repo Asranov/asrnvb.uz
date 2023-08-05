@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import "./Header.css"
+import { GiHamburgerMenu } from 'react-icons/gi';
+
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -10,7 +12,7 @@ function Header() {
 
   return (
     <div className='header'>
-      <nav className='nav'>
+      <nav className='nav nav-grid'>
         <div>
           <a href="#" className='nav__logo' id='home'>Asrnvb</a>
         </div>
@@ -31,7 +33,7 @@ function Header() {
           </div>
         </div>
         <div className="nav__toggle" id="nav-toggle" onClick={handleChange}>
-          <i className="bx bx-menu">X</i>
+          <GiHamburgerMenu />
         </div>
       </nav>
     </div>

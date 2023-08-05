@@ -11,7 +11,7 @@
 .nav {
   height: 4.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   font-weight: 600;
   margin: 0 1rem;
@@ -51,11 +51,15 @@
 
 .nav__toggle {
   display: none;
+  color: #000;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 767px) {
   .nav {
     height: 3rem;
+    justify-content: space-between;
   }
 
   .nav__toggle {
@@ -68,7 +72,7 @@
     right: -100%;
     width: 80%;
     height: 100%;
-    padding: 2rem;
+    padding: 2rem 0rem;
     background-color: #000;
     transition: 0.5s;
   }
