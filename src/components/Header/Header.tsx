@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import "./Header.css";
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -8,6 +8,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const menuRef = useRef(null);
 
   const handleChange = () => {
     setIsOpen(!isOpen);
@@ -24,6 +25,21 @@ function Header() {
     link.click();
   };
 
+  useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      if (menuRef.current && !(menuRef.current as HTMLDivElement).contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleOutsideClick);
+
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick);
+    };
+  }, []);
+
+
   return (
     <div className='header'>
       <nav className='nav'>
@@ -32,7 +48,7 @@ function Header() {
             Asrnvb
           </Link>
         </div>
-        <div className={`nav__menu ${isOpen ? 'show' : ''}`}>
+        <div ref={menuRef} className={`nav__menu ${isOpen ? 'show' : ''}`}>
           <div className="nav__list">
             <div className={`nav__item ${isActive('/')}`}>
               <Link to="/" className='nav__link'>
