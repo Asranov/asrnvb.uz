@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import "./Header.css";
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -28,26 +28,26 @@ function Header() {
     <div className='header'>
       <nav className='nav'>
         <div>
-          <a href="/" className='nav__logo' id='home'>
+          <Link to="/" className='nav__logo' id='home'>
             Asrnvb
-          </a>
+          </Link>
         </div>
         <div className={`nav__menu ${isOpen ? 'show' : ''}`}>
           <div className="nav__list">
             <div className={`nav__item ${isActive('/')}`}>
-              <a href="/" className='nav__link'>
+              <Link to="/" className='nav__link'>
                 Home
-              </a>
+              </Link>
             </div>
             <div className={`nav__item ${isActive('/about')}`}>
-              <a href="/about" className='nav__link'>
+              <Link to="/about" className='nav__link'>
                 About
-              </a>
+              </Link>
             </div>
             <div className={`nav__item ${isActive('/projects')}`}>
-              <a href="/projects" className='nav__link'>
+              <Link to="/projects" className='nav__link'>
                 Projects
-              </a>
+              </Link>
             </div>
             <div className='nav__item'>
               <button className='download__btn' onClick={handleDownload}>Download CV</button>
