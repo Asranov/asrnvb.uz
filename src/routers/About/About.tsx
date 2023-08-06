@@ -1,6 +1,6 @@
 import React from 'react'
 import "./About.css"
-import avatar from "../../assets/images/avatar.jpg";
+import photo from "../../assets/images/photo.jpg";
 
 function About() {
   return (
@@ -14,7 +14,7 @@ function About() {
           </p>
         </div>
         <div className="about__image">
-          <img src={avatar} alt="avatar" />
+          <img src={photo} alt="avatar" />
         </div>
       </div>
     </div>
