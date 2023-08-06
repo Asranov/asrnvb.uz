@@ -4,3 +4,21 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+/* 1 */
+/* ::selection {
+  background-color: #3498db;
+  color: #fff;
+} */
+
+/* 2 */
+/* ::selection {
+  background-color: #95a5a6;
+  color: #fff;
+} */
+
+/* 3 */
+::selection {
+  background-color: #34495e;
+  color: #fff;
+}
