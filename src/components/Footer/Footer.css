@@ -1,6 +1,6 @@
 .footer {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--secondary);
+  color: var(--primary);
   text-align: center;
   font-weight: 600;
   padding: 2rem 0;
@@ -21,7 +21,7 @@
 .social__icon {
   width: 35px;
   height: 35px;
-  color: #fff;
+  color: var(--primary);
   transition: 0.1s;
 }
 

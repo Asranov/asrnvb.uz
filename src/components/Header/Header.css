@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: #fff;
+  background-color: var(--primary);
   box-shadow: 0 1px 4px #92a1b026;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .nav__logo {
-  color: #000;
+  color: var(--secondary);
   text-decoration: none;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .nav__item a {
-  color: #000;
+  color: var(--secondary);
   text-decoration: none;
 }
 .nav__link {
@@ -41,7 +41,7 @@
 }
 
 .active a:after {
-  background: #000;
+  background: var(--secondary);
   border-radius: 16px;
   top: 0.5rem;
   content: "";
@@ -55,7 +55,7 @@
 
 .nav__toggle {
   display: none;
-  color: #000;
+  color: var(--secondary);
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -66,13 +66,13 @@
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
-  background: #000;
-  color: #fff;
+  background: var(--secondary);
+  color: var(--primary);
 }
 
 .download__btn:hover {
   background: #dedede;
-  color: #000;
+  color: var(--secondary);
 }
 
 @media only screen and (max-width: 767px) {
@@ -86,7 +86,7 @@
   }
 
   .active a:after {
-    background: #fff;
+    background: var(--primary);
   }
 
   .nav__menu {
@@ -96,7 +96,7 @@
     width: 80%;
     height: 100%;
     padding: 2rem 0rem;
-    background-color: #000;
+    background-color: var(--secondary);
     transition: 0.5s;
   }
 
@@ -109,7 +109,7 @@
 
   .nav__link {
     position: relative;
-    color: #fff !important;
+    color: var(--primary) !important;
   }
 
   .show {
@@ -122,6 +122,6 @@
 
   .download__btn {
     background: #dedede;
-    color: #000;
+    color: var(--secondary);
   }
 }
