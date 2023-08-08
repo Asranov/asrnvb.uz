@@ -6,6 +6,7 @@ import avatar from "../../assets/images/avatar.jpg"
 function Temp() {
   return (
     <div className='temp'>
+      <a href="http://asrnvb.uz/" className='logo-text'>Asrnvb</a>
       <div className="temp__container">
         <img src={avatar} alt="avatar" />
         <h1 className="temp__title">Asranov Bakhtnur</h1>
