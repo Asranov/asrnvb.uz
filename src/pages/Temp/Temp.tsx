@@ -9,7 +9,7 @@ function Temp() {
       <div className="temp__container">
         <img src={avatar} alt="avatar" />
         <h1 className="temp__title">Asranov Bakhtnur</h1>
-        <p className='temp__soon'>My website is opening soon...</p>
+        <p className='temp__soon'>Prepararing for the big reveal <br /> of website soon...</p>
         <div className="temp__socials">
           <a href="https://github.com/Asranov" target={"_blank"}>
             <FaGithub className='social__icon' />
