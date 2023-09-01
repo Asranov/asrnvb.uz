@@ -6,22 +6,22 @@ import avatar from "../../assets/images/avatar.jpg"
 function Temp() {
   return (
     <div className='temp'>
-      <a href="http://asrnvb.uz/" className='logo-text'>Asrnvb</a>
+      <a href="https://asrnvb.uz/" className='logo-text'>Asrnvb</a>
       <div className="temp__container">
         <img src={avatar} alt="avatar" />
         <h1 className="temp__title">Asranov Bakhtnur</h1>
         <p className='temp__soon'>Prepararing for the big reveal <br /> of website soon...</p>
         <div className="temp__socials">
-          <a href="https://github.com/Asranov" target={"_blank"}>
+          <a href="https://github.com/Asranov" target={"_blank"} rel="noreferrer">
             <FaGithub className='social__icon' />
           </a>
-          <a href="https://www.linkedin.com/in/baxtnur-asranov-170314243/" target={"_blank"}>
+          <a href="https://www.linkedin.com/in/baxtnur-asranov-170314243/" target={"_blank"} rel="noreferrer">
             <FaLinkedin className='social__icon' />
           </a>
-          <a href="https://t.me/asrnvb" target={"_blank"}>
+          <a href="https://t.me/asrnvb" target={"_blank"} rel="noreferrer">
             <FaTelegram className='social__icon' />
           </a>
-          <a href="https://www.instagram.com/axi.asranov" target={"_blank"}>
+          <a href="https://www.instagram.com/asranov.insights" target={"_blank"} rel="noreferrer">
             <FaInstagram className='social__icon' />
           </a>
         </div>
