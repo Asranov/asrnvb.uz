@@ -3,7 +3,7 @@ import { FaGithub, FaInstagram, FaTelegram, FaLinkedin } from 'react-icons/fa';
 import "./Temp.css"
 import avatar from "../../assets/images/avatar.jpg"
 
-function Temp() {
+const Temp = () => {
   return (
     <div className='temp'>
       <a href="https://asrnvb.uz/" className='logo-text'>Asrnvb</a>
