@@ -21,7 +21,7 @@ const Temp = () => {
           <a href="https://t.me/asrnvb" target={"_blank"} rel="noreferrer">
             <FaTelegram className='social__icon' />
           </a>
-          <a href="https://www.instagram.com/asranov.insights" target={"_blank"} rel="noreferrer">
+          <a href="https://www.instagram.com/axi.asranov" target={"_blank"} rel="noreferrer">
             <FaInstagram className='social__icon' />
           </a>
         </div>
